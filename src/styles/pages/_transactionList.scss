@@ -1,0 +1,50 @@
+#page-transaction-list {
+  font-family: Lato, Arial, serif;
+
+  .text-greeting {
+    margin: 5px 10px;
+  }
+
+  .text-notice {
+    margin: 0 10px;
+
+    .amount {
+      color: #fd6542;
+    }
+  }
+
+  .input-container {
+    display: flex;
+    width: 100%;
+    margin: 15px 0 20px;
+  
+    .icon {
+      padding: 10px;
+      background: #ffffff;
+      color: #d0d2d3;;
+      min-width: 30px;
+      text-align: center;
+      border: 1px solid #d0d2d3;
+      border-right: none;
+    }
+    
+    .input-field {
+      width: 100%;
+      padding: 10px;
+      outline: none;
+      border: 1px solid #d0d2d3;
+      border-left: none;
+    }
+    
+    .select-field {
+      border: 1px solid #d0d2d3;
+      border-left: none;
+      background-color: #ffffff;
+    }
+
+    .select-field:focus {
+      outline: none;
+    }
+  }
+}
+

@@ -1,0 +1,79 @@
+#page-transaction-detail {
+  font-family: Lato, Arial, serif;
+
+  .id-container {
+    background-color: #ffffff;
+    border-radius: 5px;;
+    display: flex;
+    padding: 20px;
+    margin: 15px 0 20px;
+
+    .left-side, .right-side {
+      position: relative;
+      float: left;
+      width: 50%;
+    }
+    
+    .right-side {
+      text-align: right;
+      font-size: 9pt;
+
+      .status {
+        text-align: center;
+        padding: 5px 10px;
+        border-radius: 5px;
+
+        &.success {
+          background-color: #56b586;
+          color: #ffffff;
+        }
+    
+        &.pending {
+          background-color: #ffffff;
+          border: 1px solid #fd6542;
+        }
+      }
+    }
+  }
+
+  .detail-container {
+    background-color: #ffffff;
+    border-radius: 5px;;
+    display: flex;
+    padding: 20px 0;
+    margin-bottom: 20px;
+
+    .left-side {
+      position: relative;
+      float: left;
+      width: 15%;
+      text-align: center;
+
+      .icon {
+        font-size: 28pt;
+        color: #fd6542;
+      }
+    }
+
+    .right-side {
+      position: relative;
+      float: left;
+      width: 85%;
+
+      .item-field {
+        width: 100%;
+        margin-bottom: 10px;
+        line-height: 1.25;
+      }
+    }
+  }
+
+  .btn-back {
+    padding: 10px;
+    border: 1px solid #fd6542;
+    border-radius: 5px;
+    color: #fd6542;
+    font-size: 10pt;
+  }
+}
+
