@@ -21,3 +21,6 @@ You can find the most recent version of this guide [here](https://github.com/fac
 ## **Build App**
 
 - `yarn build` or `npm start build`
+
+
+**Notes** : Because of CORS Policy issue in development, I've put the configuration in setupProxy.js for make it run

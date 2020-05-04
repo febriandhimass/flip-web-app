@@ -4,13 +4,13 @@ import Loadable from 'react-loadable';
 import Loading from 'components/Loading';
 import { TransactionProvider } from 'context/TransactionContext';
 
-const PageTransactionList = Loadable({ loading: () => <Loading text={false}/>, loader: () => import('pages/TransactionList') })
-const PageTransactionDetail = Loadable({ loading: () => <Loading text={false}/>, loader: () => import('pages/TransactionDetail') })
+const PageTransactionList = Loadable({ loading: () => <Loading text={false}/>, loader: () => import('pages/TransactionList') });
+const PageTransactionDetail = Loadable({ loading: () => <Loading text={false}/>, loader: () => import('pages/TransactionDetail') });
 
 const App = () => {
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
   
   return (
     <TransactionProvider>
@@ -22,6 +22,6 @@ const App = () => {
       </Router>
     </TransactionProvider>
   );
-}
+};
 
 export default App;

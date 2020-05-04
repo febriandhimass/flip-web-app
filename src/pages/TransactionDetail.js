@@ -1,24 +1,24 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 import Header from 'components/Header';
-import Loading from 'components/Loading'
+import Loading from 'components/Loading';
 import { Link } from 'react-router-dom';
 
 const TransactionDetail = (props) => {
-  const [loading, setLoading] = useState(false)
-  const [data, setData] = useState([])
+  const [loading, setLoading] = useState(false);
+  const [data, setData] = useState([]);
   
-  useEffect(() => {
-    document.title = "Transaction | Flip Frontend Developer Recruitment Test"
-    setLoading(true)
-    fetchData(props.match.params.id)
-  }, [props.match.params.id])
-
   const fetchData = (id) => {
-    const transactions = JSON.parse(window.localStorage.transaction)
-    const data = transactions.filter(v => v.id === id)
-    setData(data)
-    setLoading(false)
-  }
+    const transactions = JSON.parse(window.localStorage.transaction);
+    const transaction = transactions.filter((v) => v.id === id);
+    setData(transaction);
+    setLoading(false);
+  };
+
+  useEffect(() => {
+    document.title = 'Transaction | Flip Frontend Developer Recruitment Test';
+    setLoading(true);
+    fetchData(props.match.params.id);
+  }, [props.match.params.id]);
 
   const optionDate = { year: 'numeric', month: 'long', day: 'numeric' };
  
@@ -36,8 +36,8 @@ const TransactionDetail = (props) => {
                 ID TRANSAKSI: {data[0].id}
               </div>
               <div className="right-side">
-                <span className={data[0].status === "SUCCESS" ? "status success" : "status pending"}>
-                  {data[0].status === "SUCCESS" ? "Berhasil" : "Pengecekan"}
+                <span className={data[0].status === 'SUCCESS' ? 'status success' : 'status pending'}>
+                  {data[0].status === 'SUCCESS' ? 'Berhasil' : 'Pengecekan'}
                 </span>
               </div>
             </div>
@@ -79,7 +79,7 @@ const TransactionDetail = (props) => {
         </Link>
       </div>      
     </div>
-  )
-}
+  );
+};
 
-export default TransactionDetail
+export default TransactionDetail;

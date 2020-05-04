@@ -12,6 +12,7 @@
       position: relative;
       float: left;
       width: 50%;
+      font-size: 12pt;
     }
     
     .right-side {
@@ -77,3 +78,20 @@
   }
 }
 
+@media screen and (max-width: 576px) {
+  #page-transaction-detail {
+    .id-container {
+      .left-side {
+        font-size: 11pt;
+      }
+    }
+
+    .detail-container {
+      .left-side {
+        .icon {
+          font-size: 24pt;
+        }
+      }
+    }
+  }
+}

@@ -3,6 +3,7 @@
 
   .text-greeting {
     margin: 5px 10px;
+    font-size: 18pt;
   }
 
   .text-notice {
@@ -48,3 +49,10 @@
   }
 }
 
+@media screen and (max-width: 576px) {
+  #page-transaction-list {
+    .text-greeting {
+      font-size: 16pt;
+    }
+  }
+}
