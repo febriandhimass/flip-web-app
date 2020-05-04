@@ -6,7 +6,7 @@ You can find the most recent version of this guide [here](https://github.com/fac
 ## **Configure App**
 
 - clone it
-- `cd flip-transaction`
+- `cd flip-web-app`
 - Copy file `.env.example`
 - Paste and rename file to `.env`
 - `yarn` or `npm install`
