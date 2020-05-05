@@ -7,6 +7,7 @@ const TransactionDetail = (props) => {
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState([]);
   
+  // fetch data by id
   const fetchData = (id) => {
     const transactions = JSON.parse(window.localStorage.transaction);
     const transaction = transactions.filter((v) => v.id === id);

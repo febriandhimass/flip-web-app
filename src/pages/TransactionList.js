@@ -29,7 +29,9 @@ const Home = () => {
   useEffect(() => {
     document.title = 'Transaction | Flip Frontend Developer Recruitment Test';
     setLoading(true);
-    fetchData();
+    if (state.transaction.length === 0) {
+      fetchData();
+    }
   }, []);
 
   // set state transactions
